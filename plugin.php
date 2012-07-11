@@ -41,8 +41,8 @@ function matt_share_files_save_files() {
 	$matt_filename = pathinfo($_FILES['file_upload']['name'], PATHINFO_FILENAME);
 	$matt_filename_trim = trim($matt_filename);
 	$matt_RemoveChars  = array( "([\40])" , "([^a-zA-Z0-9-])", "(-{2,})" ); 
-    $matt_ReplaceWith = array("-", "", "-"); 
-    $matt_safe_filename = preg_replace($matt_RemoveChars, $matt_ReplaceWith, $matt_filename_trim); 
+	$matt_ReplaceWith = array("-", "", "-"); 
+	$matt_safe_filename = preg_replace($matt_RemoveChars, $matt_ReplaceWith, $matt_filename_trim); 
 	$matt_count = 2;
 	$matt_path = $matt_uploaddir.$matt_safe_filename.'.'.$matt_extension;
 	while(file_exists($matt_path)) {
