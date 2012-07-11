@@ -45,6 +45,7 @@ function matt_share_files_save_files() {
 	$matt_safe_filename = preg_replace($matt_RemoveChars, $matt_ReplaceWith, $matt_filename_trim); 
 	$matt_count = 2;
 	$matt_path = $matt_uploaddir.$matt_safe_filename.'.'.$matt_extension;
+	$matt_final_file_name = $matt_safe_filename.'.'.$matt_extension;
 	while(file_exists($matt_path)) {
 		$matt_path = $matt_uploaddir.$matt_safe_filename.'-'.$matt_count.'.'.$matt_extension;
 		$matt_final_file_name = $matt_safe_filename.'-'.$matt_count.'.'.$matt_extension;
