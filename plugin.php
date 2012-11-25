@@ -62,7 +62,7 @@ function matt_share_files_save_files() {
 			echo 'Your file was saved successfully at '.$matt_short_url['shorturl'];
 		} else{
 			$matt_short_url = yourls_add_new_link($matt_url.$matt_final_file_name, NULL, $matt_filename);
-			echo 'Your file was saved successfully at '.$matt_short_url['shorturl'];
+			echo 'Your file was saved successfully at <a href="'.$matt_short_url['shorturl'].'">'.$matt_short_url['shorturl'].'</a>';
 		}
 	} else {
 		echo 'something went wrong when saving your file';
