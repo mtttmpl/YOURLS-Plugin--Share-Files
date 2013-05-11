@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Share Files
-Plugin URI: http://www.mattytemple.com.org/projects/yourls-share-files/
+Plugin URI: http://www.mattytemple.com/projects/yourls-share-files/
 Description: A simple plugin that allows you to easily share files
 Version: 1.0
 Author: Matt Temple
