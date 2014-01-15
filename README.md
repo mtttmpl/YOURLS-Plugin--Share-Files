@@ -1,7 +1,7 @@
-YOURLS-Plugin--Share-Files
+YOURLS Plugin- Share-Files
 ==========================
 
-Upload and share files with YOURLS
+Upload and share files with YOURLS. Now you can share your files using shortlinks as well as URL's. 
 
 Setup and Installation
 ----------------------------
