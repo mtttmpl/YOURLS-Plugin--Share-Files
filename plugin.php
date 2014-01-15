@@ -35,8 +35,9 @@ function matt_share_files_do_page() {
 // Update option in database
 function matt_share_files_save_files() {
 	$matt_url = 'http://files.matt.mx/';
-	$matt_uploaddir = $_SERVER['DOCUMENT_ROOT'].'/files.matt.mx/';
+	$matt_upload_folder = 'files'; //e.g. files/folder - relative to document root
 	//
+	$matt_uploaddir = $_SERVER['DOCUMENT_ROOT'].'/files.matt.mx/';
 	$matt_extension = pathinfo($_FILES['file_upload']['name'], PATHINFO_EXTENSION);
 	$matt_filename = pathinfo($_FILES['file_upload']['name'], PATHINFO_FILENAME);
 	$matt_filename_trim = trim($matt_filename);
@@ -55,6 +56,9 @@ function matt_share_files_save_files() {
 	fwrite($test_file, 'testing file writes');
 	fclose($test_file);
 	die(); */
+	
+	$matt_url = $matt_url.$matt_upload_folder; //reform the matt_url to upload to the correct directory
+	
 	if(copy($_FILES['file_upload']['tmp_name'], $matt_path)) {
 		if(isset($_POST['custom_keyword']) && $_POST['custom_keyword'] != '') {
 			$matt_custom_keyword = $_POST['custom_keyword'];
