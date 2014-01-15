@@ -35,9 +35,9 @@ function matt_share_files_do_page() {
 // Update option in database
 function matt_share_files_save_files() {
 	$matt_url = 'http://files.matt.mx/';
-	$matt_upload_folder = 'files'; //e.g. files/folder - relative to document root
+	$matt_upload_folder = 'files/'; //e.g. files/folder/ - relative to document root INC TRAILING SLASH
 	//
-	$matt_uploaddir = $_SERVER['DOCUMENT_ROOT'].'/files.matt.mx/';
+	$matt_uploaddir = $_SERVER['DOCUMENT_ROOT'].'/'.$matt_upload_folder;
 	$matt_extension = pathinfo($_FILES['file_upload']['name'], PATHINFO_EXTENSION);
 	$matt_filename = pathinfo($_FILES['file_upload']['name'], PATHINFO_FILENAME);
 	$matt_filename_trim = trim($matt_filename);
