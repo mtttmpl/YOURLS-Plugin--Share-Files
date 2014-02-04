@@ -36,6 +36,8 @@ function matt_share_files_do_page() {
 function matt_share_files_save_files() {
 	$matt_url = 'http://files.matt.mx/';
 	$matt_uploaddir = $_SERVER['DOCUMENT_ROOT'].'/files.matt.mx/';
+	// set this to your directory also
+	$matt_dir = 'files.matt.mx/';
 	//
 	$matt_extension = pathinfo($_FILES['file_upload']['name'], PATHINFO_EXTENSION);
 	$matt_filename = pathinfo($_FILES['file_upload']['name'], PATHINFO_FILENAME);
@@ -58,10 +60,10 @@ function matt_share_files_save_files() {
 	if(copy($_FILES['file_upload']['tmp_name'], $matt_path)) {
 		if(isset($_POST['custom_keyword']) && $_POST['custom_keyword'] != '') {
 			$matt_custom_keyword = $_POST['custom_keyword'];
-			$matt_short_url = yourls_add_new_link($matt_url.$matt_final_file_name, $matt_custom_keyword, $matt_filename);
-			echo 'Your file was saved successfully at '.$matt_short_url['shorturl'];
+			$matt_short_url = yourls_add_new_link($matt_url.$matt_dir.$matt_final_file_name, $matt_custom_keyword, $matt_filename);
+			echo 'Your file was saved successfully at <a href="'.$matt_short_url['shorturl'].'">'.$matt_short_url['shorturl'].'</a>';
 		} else{
-			$matt_short_url = yourls_add_new_link($matt_url.$matt_final_file_name, NULL, $matt_filename);
+			$matt_short_url = yourls_add_new_link($matt_url.$matt_dir.$matt_final_file_name, NULL, $matt_filename);
 			echo 'Your file was saved successfully at <a href="'.$matt_short_url['shorturl'].'">'.$matt_short_url['shorturl'].'</a>';
 		}
 	} else {
