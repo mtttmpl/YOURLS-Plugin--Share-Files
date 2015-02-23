@@ -6,9 +6,12 @@ Upload and share files with YOURLS. Now you can share your files using shortlink
 Setup and Installation
 ----------------------------
 * Download the plugin
-* open plugin.php in your chosen text editor
-* change http://files.matt.mx/ to your end URL where files are publicly available. The trailing slash (/) is important and required
-* change files/ to the file path of where your files are stored (relative to your public_html folder) again The trailing slash (/) is important and required
-* save the file and upload the share-files folder to /user/plugins
+* Upload the share-files folder to the /user/plugins/ directory in your YOURLS-directory
+* open user/config.php in your YOURLS-directory with any text editor
+* add two definitions at the end of the file:
+* define( 'SHARE_URL', 'http://my.domain.tld/directory/' );
+* define( 'SHARE_DIR', '/full/path/to/httpd/directory/' );
+* both must point to the (existing) directory where yor files should be uploaded and accessed from the web
+* The trailing slashes (/) are important!
+* If necessary create a folder matching the folder name above and run 'chmod r+w folder'
 * go to the plugins page in your YOURLS admin interface and activate the plugin
-* Create a folder matching the folder name above and run 'chmod r+w folder'
