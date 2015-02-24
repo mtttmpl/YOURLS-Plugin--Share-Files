@@ -1,11 +1,12 @@
 <?php
 /*
 Plugin Name: Share Files (fork by fredl99)
-Plugin URI: http://www.mattytemple.com/projects/yourls-share-files/
+Plugin URI: https://github.com/fredl99/YOURLS-Plugin--Share-Files
+(forked from http://www.mattytemple.com/projects/yourls-share-files)
 Description: A simple plugin that allows you to easily share files
-Version: 1.0.1-F
-Author: Matt Temple
-Author URI: http://www.mattytemple.com/
+Version: 1.1-F
+Original author: Matt Temple
+Author: Fredl
 */
 
 // Register our plugin admin page
