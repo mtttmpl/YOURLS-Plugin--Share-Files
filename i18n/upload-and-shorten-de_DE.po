@@ -1,0 +1,73 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: share_files\n"
+"POT-Creation-Date: 2015-02-28 17:09+0100\n"
+"PO-Revision-Date: 2015-02-28 17:12+0100\n"
+"Last-Translator: Fredl <fredl99@users.noreply.github.com>\n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;yourls_esc_html__;"
+"yourls_esc_attr__;yourls_esc_html_e;yourls_esc_attr_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../plugin.php:35
+msgid "Upload & Shorten"
+msgstr "Upload & Shorten"
+
+#: ../plugin.php:36
+msgid ""
+"Here you can upload a file to your webserver and create a short-URL for it."
+msgstr ""
+"Hier kannst du eine Datei auf deinen Webserver hochladen und eine Short-URL "
+"dafür erzeugen."
+
+#: ../plugin.php:37
+msgid "Select file to upload: "
+msgstr "Datei zum Hochladen auswählen: "
+
+#: ../plugin.php:38
+msgid "Optional custom keyword: "
+msgstr "Benutzerdefinierter Kurzname (optional): "
+
+#: ../plugin.php:39
+msgid "Randomize filename "
+msgstr "Zufälligen Dateinamen erzeugen"
+
+#: ../plugin.php:40
+msgid "  Go!  "
+msgstr "  Los!  "
+
+#: ../plugin.php:63
+msgid "You need to select a file to upload."
+msgstr "Du musst eine Datei zum Hochladen auswählen."
+
+#: ../plugin.php:110
+msgid "Upload finished. This is your short-URL: "
+msgstr "Upload fertig. Das ist deine short-URL: "
+
+#: ../plugin.php:113
+msgid "Upload failed! Something went wrong, sorry! :("
+msgstr "Upload fehlgeschlagen! Irgendwas ist schiefgegangen, sorry! :( "
+
+#~ msgid "Share Files"
+#~ msgstr "Dateien teilen"
+
+#~ msgid "This plugin allows you to upload and share files online"
+#~ msgstr ""
+#~ "Mit diesem Plugin kannst du Dateien hochladen und eine Kurz-URL dafür "
+#~ "erzeugen"
+
+#~ msgid "Upload File"
+#~ msgstr "Datei hochladen"
+
+#~ msgid "Your file was saved at "
+#~ msgstr "Die Datei wurde gespeichert unter "
+
+#~ msgid "Something went wrong when saving your file"
+#~ msgstr "Etwas ist schiefgegangen :("
